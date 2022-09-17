@@ -1,0 +1,155 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid turquoise;
+}
+
+.navMenu {
+  height: 15px;
+  width: 20px;
+}
+
+.navLogo {
+  height: 60px;
+  width: 120px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.navSearch {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  max-width: 30%;
+  margin: 2px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.searchButton {
+  height: 40px;
+  width: 30px;
+  border: none;
+  background: none;
+  background-color: none;
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.searchBar {
+  display: flex;
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  margin: 10px;
+}
+
+.navCart {
+  height: 30px;
+  width: 40px;
+}
+
+.navLog {
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navLog:hover {
+  text-decoration: none;
+  color: black;
+  background-color: rgb(235, 229, 229);
+}
+
+.navSign {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navSign:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(57, 57, 57);
+}
+
+.navLanguage {
+  all: revert;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.smallText {
+  font-size: small;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .hidden {
+    display: flex;
+  }
+  .hiddenSmall {
+    display: none;
+  }
+
+  /* NAVIGATION BAR */
+
+  .navLogo {
+    height: 40px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navSearch {
+    border: none;
+    max-width: 50px;
+  }
+  .navSearch:hover {
+    max-width: 300px;
+  }
+  .navSearch:hover > .searchBar {
+    display: flex;
+  }
+}

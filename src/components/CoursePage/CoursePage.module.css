@@ -1,0 +1,10 @@
+.underConstruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+  margin-top: 150px;
+  padding: 50px;
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,43 @@
+.offers {
+  all: revert;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f9fb;
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.offerText {
+  all: revert;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  margin: 10px;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  padding: 3%;
+}
+
+.offerText h1 {
+  font-weight: bold;
+}
+
+.offerImg {
+  all: revert;
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .offers {
+    flex-direction: column-reverse;
+  }
+}
