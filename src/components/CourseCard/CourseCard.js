@@ -64,7 +64,7 @@ function CourseCard(props) {
     props.searchKey !== "" &&
     props.courseData.title
       .toLowerCase()
-      .indexOf(props.searchKey.toLowerCase()) == -1
+      .indexOf(props.searchKey.toLowerCase()) === -1
   ) {
     return <></>;
   }
